@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+           <title>
+	    Calculator
+       </title>
+   </head>
+		<body>
+		   <center> 
+			    <h1>CALCULATOR</h1>
+		            </center>
+	                    <center>
+				           <form name="cal">
+				    	        <table>
+				    	        	<tr>
+				                <td colspan=5>
+					<input type="text" id="res" ondrop="drop(value)" ondragover="allowdrop(value)" disabled>
+		                   </td>
+		                </tr>
+				               <tr>
+				    <tr>
+				   <td>
+				   	<input class="btn" type=button value="7" onclick="numInput('7')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+				    </td>
+				    <td>
+				    	<input class="btn" type=button  value="8" onclick="numInput('8')" draggable="true" ondragstart="dragstart(value)">
+				    </td>
+				    <td>
+				    	<input class="btn" type=button  value="9" onclick="numInput('9')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+				    </td>
+				    <td>
+				    	<input class="btn" type=button  value="+" onclick="numInput('+')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+				    </td>
+
+				    <td>
+				       <input class="btn"type=button  value="power"  onclick="calcPower()" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+		     </td>
+				    		
+				    </tr>
+				    <tr>
+				    <td>
+				    	<input   class="btn" type=button  value="4" onclick="numInput('4')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+				   </td>
+				   <td>
+				   	   <input   class="btn" type=button  value="5" onclick="numInput('5')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+				   </td>
+				   <td>
+				   	  <input   class="btn" type=button  value="6" onclick="numInput('6')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+				  </td>
+				  <td>
+				    <input  class="btn"  type=button  value="-" onclick="numInput('-')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+			</td>
+			 <td>
+				       <input class="btn"type=button  value="^"  onclick="numInput('^')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+		     </td>
+
+				</tr>
+		           <tr>
+				   <td> 
+				   	<input  class="btn" type=button  value="1" onclick="numInput('1')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+				   </td>
+				   <td> 
+				   	<input   class="btn"type=button  value="2" onclick="numInput('2')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+				   </td>
+				   <td>
+				    <input  class="btn" type=button  value="3" onclick="numInput('3')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+				</td>
+				   <td>
+				   	<input  class="btn" type=button  value="*" onclick="numInput('*')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+				   </td>
+				   </tr>
+			    <tr>
+	              <td> 
+	              	<input class="btn" type=button value="0" onclick="numInput('0')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+	              </td>
+	              <td> 
+	              	<input  class="btn" type=button value="<<" onclick="back()">
+	              </td>
+				  <td>
+				  	 <input class="btn" type=button  value="="  onclick="solution()" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+				  </td>
+				  <td>
+				  	<input class="btn"  type=button value="/" onclick="numInput('/')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+				  </td>
+				 	</tr>
+				    <tr>
+				    	 <td> 
+				    	 	<input class="btn" type=button  value="sqrt" onclick="sqrt()" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+				    	 </td>
+				    	 <td>
+				    	 	<input class="btn"type=button  value="clr" onclick="clean()">
+				    	 </td>
+	                 <td>
+				    	 	<input class="btn" type=button value="." onclick="numInput('.')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+				   </td>
+                     <td>
+				       <input class="btn"type=button  value="%"  onclick="numInput('%')" draggable="true" id="dragbutton" ondragstart="dragstart(value)">
+		     </td>
+		     
+	   </tr>	
+</table>
+</center>
+				</form>
+				
+</body>
+</html>
+  <script type="text/javascript" src="calci.js"></script>
